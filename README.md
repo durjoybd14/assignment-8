@@ -7,4 +7,4 @@
 
 
 #live site link
--> 
+-> https://nrd141913-sports-buzz.netlify.app/
