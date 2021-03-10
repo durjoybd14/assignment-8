@@ -1,0 +1,36 @@
+.social-icon{
+    text-align:center;
+    display:block;
+    margin-top: 20px;
+}
+
+.social-icon span{
+    font-size: 30px;
+    margin-left: 15px;
+}
+
+.card-container{
+   display:flex;
+    justify-content:space-around;
+    align-items:center;
+    background-color: #e9ecef;
+    border-radius: 10px;
+}
+
+.information-card{
+    border-radius: 10px !important;
+    border: 2px solid blue !important;
+}
+
+@media (max-width:991px){
+    .card-container{
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 20px;
+  
+     }
+     .gender-image{
+         text-align: center
+     }
+  
+}
