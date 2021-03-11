@@ -12,7 +12,7 @@ const Information = (props) => {
     const { strLogo, intFormedYear, strLeague, strSport, strGender, strCountry, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strWebsite } = props.leagueDetails;
 
 
-    const teamGender = strGender === "Female" ? <img src={femaleImage} style={{ width: '300px' }} alt="" /> : <img src={maleImage} style={{ width: '300px' }} alt="" />;
+    const teamGender = strGender === "Male" ? <img src={maleImage} style={{ width: '300px' }} alt="" /> : <img src={femaleImage} style={{ width: '300px' }} alt="" />;
 
     const websiteLink = `https://${strWebsite}`;
     const facebookLink = `https://${strFacebook}`;
