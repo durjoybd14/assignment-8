@@ -1,24 +1,19 @@
-.banner{
-    background-position: center center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-attachment: scroll;
-    height: 350px;
-    border-radius: 10px;
-    background: linear-gradient(rgba(180, 179, 177, 0.411),rgba(235, 228, 217, 0.596)), url('../../Photo/banner.png');
-    
-}
-
 .banner-container{
-    text-align: center;
+    text-align:center;
+    background-position: 50% 70% !important;
+    background-repeat: no-repeat !important;
+    height: 350px;
+    background-size: contain !important;
+    border-radius: 10px;
 }
 
-.banner-container img{
-    margin-top: 11%;
+img{
+    width: 50px;
+    margin-top: 15px;
 }
 
-h3{
-    font-style: italic;
-    color:black;
+@media (max-width:991px){
+.banner-container{
+    background-position: 50% 60% !important;
+    }
 }
-

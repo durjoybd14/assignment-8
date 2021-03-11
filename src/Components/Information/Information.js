@@ -9,10 +9,10 @@ import maleImage from '../../Photo/male.png';
 import femaleImage from '../../Photo/female.png';
 
 const Information = (props) => {
-    const { strLogo, intFormedYear, strLeague, strSport, strGender, strCountry, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strWebsite } = props.leagueDetails;
+    const { strBadge, strBanner, intFormedYear, strLeague, strSport, strGender, strCountry, strDescriptionEN, strDescriptionFR, strFacebook, strTwitter, strYoutube, strWebsite } = props.leagueDetails;
 
-
-    const teamGender = strGender === "Male" ? <img src={maleImage} style={{ width: '300px' }} alt="" /> : <img src={femaleImage} style={{ width: '300px' }} alt="" />;
+    let src;
+    strGender === "Male" ? src = maleImage : src = femaleImage
 
     const websiteLink = `https://${strWebsite}`;
     const facebookLink = `https://${strFacebook}`;
@@ -21,9 +21,9 @@ const Information = (props) => {
 
     return (
         <div className="mt-5 mb-5">
-            <Banner logo={strLogo} text={strLeague} ></Banner>
+            <Banner badge={strBadge} text={strLeague} banner={strBanner}></Banner>
 
-            <div className="card-container mt-5 p-5">
+            <div className="card-container mt-5 p-5" >
                 <Card className="information-card shadow">
                     <Card.Body>
                         <Card.Title>{strLeague}</Card.Title>
@@ -33,8 +33,9 @@ const Information = (props) => {
                         <Card.Text><FontAwesomeIcon icon={faMars} />  Gender: {strGender}</Card.Text>
                     </Card.Body>
                 </Card>
+
                 <div className="gender-image">
-                    {teamGender}
+                    {<img src={src} alt="" />}
                 </div>
             </div>
 

@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import Banner from '../Banner/Banner';
+import Header from '../Header/Header';
 import Leagues from '../Leagues/Leagues';
 import './Home.css';
 
@@ -14,7 +14,7 @@ const Home = () => {
     return (
         <div className="container mt-5">
             <div className="row">
-                <Banner text={'Sports Buzz'}></Banner>
+                <Header text={'Sports Buzz'}></Header>
             </div>
             <div className="row">
                 <div className="league-container mt-5">

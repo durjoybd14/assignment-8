@@ -1,15 +1,16 @@
 import React from 'react';
-import './Banner.css'
+import './Banner.css';
 
 const Banner = (props) => {
-    const text = props.text;
-    const logo = props.logo;
+    const { text, badge, banner } = props;
+
+    const bannerStyle = {
+        background: `linear-gradient(rgba(180, 179, 177, 0.4),rgba(235, 228, 217, 0.3)), url(${banner})`
+    }
     return (
-        <div className="col-lg-12 banner shadow-sm rounded">
-            <div className="banner-container">
-                <img src={logo} alt="" style={{ width: '200px' }} />
-                <h1>{text}</h1>
-            </div>
+        <div className="banner-container col-lg-12 shadow-sm rounded" style={bannerStyle}>
+            <img src={badge} alt="" />
+            <h4>{text}</h4>
         </div>
     );
 };

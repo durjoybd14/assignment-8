@@ -3,8 +3,8 @@
     border-radius:10px !important;
 }
 
-.card-footer{
+.league-card .card-footer{
     border: none; 
-    background-color: #6c8db8 !important;
-    border-radius:0 0 7px 7px !important;
+    background-color: #6c8db8;
+    border-radius:0 0 7px 7px;
 }

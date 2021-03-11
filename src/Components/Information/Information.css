@@ -17,9 +17,13 @@
     border-radius: 10px;
 }
 
-.information-card{
-    border-radius: 10px !important;
-    border: 2px solid blue !important;
+.card-container .information-card{
+    border-radius: 10px;
+    border: 2px solid blue;
+}
+
+.card-container .gender-image img{
+    width: 300px;
 }
 
 @media (max-width:991px){
@@ -27,7 +31,6 @@
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-gap: 20px;
-  
      }
      .gender-image{
          text-align: center

@@ -3,7 +3,7 @@ import { useParams } from 'react-router';
 import Information from '../Information/Information';
 
 
-const LeagueDetails = () => {
+const LeaguesDetails = () => {
     const { idLeague } = useParams()
     const [leaguesDetails, setLeaguesDetails] = useState([]);
     useEffect(() => {
@@ -21,4 +21,4 @@ const LeagueDetails = () => {
     );
 };
 
-export default LeagueDetails;
+export default LeaguesDetails;

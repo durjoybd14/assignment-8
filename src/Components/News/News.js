@@ -8,7 +8,7 @@ const News = () => {
                 <h2>NEWS SECTION</h2>
                 <h5>This feature arrive soon...</h5>
                 <p>Stay with us</p>
-             </Container>
+            </Container>
         </Jumbotron>
     );
 };
